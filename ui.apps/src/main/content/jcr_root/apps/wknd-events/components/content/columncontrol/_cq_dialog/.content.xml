@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          title="Column Control">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <globalAttributes jcr:primaryType="nt:unstructured"
+                                      jcr:title="Attributes &amp; Tags"
+                                      sling:resourceType="granite/ui/components/coral/foundation/container"
+                                      margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sectionHeading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Section Heading"
+                                    fieldDescription="Enter name of section header."
+                                    name="./sectionHeading"
+                                    required="{Boolean}false"/>
+                            <horizontalPadding
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                    text="Horizontal Padding"
+                                    fieldDescription="Select to turn horizontal padding on."
+                                    required="{Boolean}false"
+                                    value="true"
+                                    uncheckedValue="false"
+                                    name="./horizontalPadding"/>
+                        </items>
+                    </globalAttributes>
+                    <basic
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Columns"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <desktop
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldDescription="Enter the no. of columns to be displayed on desktop"
+                                            fieldLabel="Column Control Name"
+                                            name="./columnsArray"
+                                            text="Desktop">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <one
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="2 Column (even split)"
+                                                    value="6,6:6,6:12,12"/>
+                                            <two
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="2 Column (25, 75)"
+                                                    value="3,9:3,9:12,12"/>
+                                            <three
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="2 Column (75/25)"
+                                                    value="9,3:9,3:12,12"/>
+                                            <four
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="2 Column (33, 66)"
+                                                    value="4,8:4,8:12,12"/>
+                                            <five
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="2 Column (66, 33)"
+                                                    value="8,4:8,4:12,12"/>
+                                            <six
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="3 Column (even split))"
+                                                    value="4,4,4:4,4,4:12,12,12"/>
+                                            <sevem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="3 Column (50, 25, 25)"
+                                                    value="6,3,3:6,3,3:12,6,6"/>
+                                            <eight
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="3 Column (25, 25, 50)"
+                                                    value="3,3,6:3,3,6:6,6,12"/>
+                                            <nine
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="4 Column (even split)"
+                                                    value="3,3,3,3:3,3,3,3:6,6,6,6"/>
+                                            <ten
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="6 Column (even split)"
+                                                    value="2,2,2,2,2,2:2,2,2,2,2,2:4,4,4,4,4,4"/>
+                                        </items>
+                                    </desktop>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

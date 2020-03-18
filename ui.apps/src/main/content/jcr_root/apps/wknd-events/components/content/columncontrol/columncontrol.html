@@ -1,0 +1,14 @@
+<div data-sly-test="${wcmmode.edit}">
+    <h2 class="text-uppercase">Column Control Component</h2>
+</div>
+<div data-sly-use.columnControl="com.lowes.aem.pckg.core.models.ColumnControl">
+    <div class="grid-100">
+        <h2 class="text-uppercase" data-sly-test="${columnControl.sectionHeading}">${columnControl.sectionHeading}</h2>
+        <div data-sly-list="${columnControl.desktopCols}" data-sly-unwrap>
+            <div class="${item.gridClass}">
+                <sly data-sly-test.par="${'{0}{1}' @format=['par_',item.count]}" />
+                <div data-sly-resource="${@ path=par, resourceType='wcm/foundation/components/responsivegrid'}" data-sly-unwrap></div>
+            </div>
+        </div>
+    </div>
+</div>

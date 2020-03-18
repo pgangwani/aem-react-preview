@@ -1,0 +1,4 @@
+{
+  "*.+(js|jsx)": ["npm run style -- --fix"],
+  "*.+(json|css|md)": ["prettier --write"]
+}

@@ -1,0 +1,327 @@
+{
+  ":hierarchyType": "page",
+  ":path": "/content/wknd-events/react/home",
+  "title": "Home",
+  ":type": "wknd-events/components/structure/page",
+  ":items": {
+    "root": {
+      "columnCount": 12,
+      "allowedComponents": {
+        "components": [
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wcm/foundation/components/responsivegrid",
+            "title": "Layout Container"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/columncontrol",
+            "title": "Column Control Component"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/countdownclock",
+            "title": "Countdown Clock"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/image",
+            "title": "Image"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/list",
+            "title": "List"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/slimpopcat",
+            "title": "Slim Popcat"
+          },
+          {
+            "path": "/content/wknd-events/react/home/jcr:content/root/wknd-events/components/content/text",
+            "title": "Text"
+          }
+        ],
+        "applicable": false
+      },
+      "columnClassNames": {
+        "responsivegrid": "aem-GridColumn aem-GridColumn--default--12"
+      },
+      "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+      ":items": {
+        "responsivegrid": {
+          "columnCount": 12,
+          "allowedComponents": {
+            "components": [
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wcm/foundation/components/responsivegrid",
+                "title": "Layout Container"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/columncontrol",
+                "title": "Column Control Component"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/countdownclock",
+                "title": "Countdown Clock"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/image",
+                "title": "Image"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/list",
+                "title": "List"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/slimpopcat",
+                "title": "Slim Popcat"
+              },
+              {
+                "path": "/content/wknd-events/react/home/jcr:content/root/responsivegrid/wknd-events/components/content/text",
+                "title": "Text"
+              }
+            ],
+            "applicable": false
+          },
+          "columnClassNames": {
+            "image": "aem-GridColumn aem-GridColumn--default--12",
+            "countdownclock": "aem-GridColumn aem-GridColumn--default--12",
+            "columncontrol_1120548646": "aem-GridColumn aem-GridColumn--default--12",
+            "countdownclock_1899988329": "aem-GridColumn aem-GridColumn--default--12",
+            "countdownclock_318821516": "aem-GridColumn aem-GridColumn--default--12",
+            "responsivegrid": "aem-GridColumn aem-GridColumn--default--12",
+            "text": "aem-GridColumn aem-GridColumn--default--12",
+            "columncontrol_1675920635": "aem-GridColumn aem-GridColumn--default--12",
+            "columncontrol": "aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0 aem-GridColumn--default--none",
+            "columncontrol_1515151675": "aem-GridColumn aem-GridColumn--default--12",
+            "columncontrol_1143807083": "aem-GridColumn aem-GridColumn--default--12"
+          },
+          "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+          ":items": {
+            "countdownclock": {
+              "resourceType": "wknd-events/components/content/countdownclock",
+              "bannerTheme": "noTheme",
+              "fullScale": false,
+              "topPadding": "8",
+              "bottomPadding": "16",
+              "desktopImage": "/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
+              "mowImage": "/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg",
+              "tabletImage": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+              "imageAltText": "hello",
+              "ctaUrl": "https://www.lowes.com/gajab",
+              "headline1": "Deals",
+              "headline2": "Starting soon...",
+              "verticalAlignment": "top",
+              "horizontalAlignment": "center",
+              "targetDate": "2020-03-31T22:46:00.000+05:30",
+              "ctaUrlTagging": {
+                "pageSpot": null,
+                "pageCategory": null,
+                "promoType": null,
+                "spotDescription": null
+              },
+              "png8": false,
+              "pageName": "Lowes homePage",
+              ":type": "wknd-events/components/content/countdownclock"
+            },
+            "countdownclock_318821516": {
+              "resourceType": "wknd-events/components/content/countdownclock",
+              "pageName": "Lowes homePage",
+              ":type": "wknd-events/components/content/countdownclock"
+            },
+            "countdownclock_1899988329": {
+              "resourceType": "wknd-events/components/content/countdownclock",
+              "pageName": "Lowes homePage",
+              ":type": "wknd-events/components/content/countdownclock"
+            },
+            "image": {
+              "lazyEnabled": true,
+              "widths": [],
+              ":type": "wknd-events/components/content/image"
+            },
+            "responsivegrid": {
+              "columnCount": 12,
+              "allowedComponents": { "components": [], "applicable": false },
+              "columnClassNames": {
+                "columncontrol_14497641": "aem-GridColumn aem-GridColumn--default--12",
+                "columncontrol_2019159641": "aem-GridColumn aem-GridColumn--default--12",
+                "text": "aem-GridColumn aem-GridColumn--default--12",
+                "columncontrol_133255283": "aem-GridColumn aem-GridColumn--default--12",
+                "slimpopcat": "aem-GridColumn aem-GridColumn--default--12",
+                "text_771189416": "aem-GridColumn aem-GridColumn--default--12",
+                "columncontrol": "aem-GridColumn aem-GridColumn--default--12"
+              },
+              "gridClassNames": "aem-Grid aem-Grid--12 aem-Grid--default--12",
+              ":items": {
+                "slimpopcat": {
+                  "resourceType": "wknd-events/components/content/slimpopcat",
+                  "bannerTheme": "noTheme",
+                  "fullScale": false,
+                  "topPadding": "12",
+                  "bottomPadding": "12",
+                  "products": [
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/apparel/footwear/source/Fleet Shoe Bottom.jpg",
+                      "imageAltText": "shoes",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "booes",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    },
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/apparel/footwear/source/Fleet Shoe.jpg",
+                      "imageAltText": "boes",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "koes",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    },
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/apparel/footwear/source/Fleet Shoe Detail.jpg",
+                      "imageAltText": "balt",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "ttla",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    },
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/apparel/footwear/Seastar Purple.jpg",
+                      "imageAltText": "chapp",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "titllll",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    },
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/activities/water-sports/Pufferfish Green.jpg",
+                      "imageAltText": "fishy",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "tifishy",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    },
+                    {
+                      "fileReference": "/content/dam/we-retail/en/products/activities/water-sports/Swim Goggles Yellow.jpg",
+                      "imageAltText": "swim",
+                      "ctaUrl": "https://www.lowes.com/",
+                      "title": "twim",
+                      "tagging": {
+                        "pageSpot": null,
+                        "pageCategory": null,
+                        "promoType": null,
+                        "spotDescription": null
+                      }
+                    }
+                  ],
+                  "png8": false,
+                  ":type": "wknd-events/components/content/slimpopcat"
+                },
+                "text": {
+                  "text": "<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>HI I am trying to find what exactly happpening</p>\r\n<p>&nbsp;</p>\r\n<p>man</p>\r\n",
+                  "richText": true,
+                  ":type": "wknd-events/components/content/text"
+                },
+                "text_771189416": {
+                  "richText": false,
+                  ":type": "wknd-events/components/content/text"
+                },
+                "columncontrol": {
+                  "resourceType": "wknd-events/components/content/columncontrol",
+                  "horizontalPadding": false,
+                  "desktopColumnsArray": "3,9",
+                  "tabletColumnsArray": "3,9",
+                  "mobileColumnsArray": "12,12",
+                  ":type": "wknd-events/components/content/columncontrol"
+                },
+                "columncontrol_14497641": {
+                  "resourceType": "wknd-events/components/content/columncontrol",
+                  ":type": "wknd-events/components/content/columncontrol"
+                },
+                "columncontrol_133255283": {
+                  "resourceType": "wknd-events/components/content/columncontrol",
+                  ":type": "wknd-events/components/content/columncontrol"
+                },
+                "columncontrol_2019159641": {
+                  "resourceType": "wknd-events/components/content/columncontrol",
+                  ":type": "wknd-events/components/content/columncontrol"
+                }
+              },
+              ":itemsOrder": [
+                "slimpopcat",
+                "text",
+                "text_771189416",
+                "columncontrol",
+                "columncontrol_14497641",
+                "columncontrol_133255283",
+                "columncontrol_2019159641"
+              ],
+              ":type": "wcm/foundation/components/responsivegrid"
+            },
+            "columncontrol": {
+              "resourceType": "wknd-events/components/content/columncontrol",
+              "sectionHeading": "heading",
+              "horizontalPadding": true,
+              "desktopColumnsArray": "9,3",
+              "tabletColumnsArray": "9,3",
+              "mobileColumnsArray": "12,12",
+              ":type": "wknd-events/components/content/columncontrol"
+            },
+            "columncontrol_1515151675": {
+              "resourceType": "wknd-events/components/content/columncontrol",
+              ":type": "wknd-events/components/content/columncontrol"
+            },
+            "text": {
+              "richText": false,
+              ":type": "wknd-events/components/content/text"
+            },
+            "columncontrol_1143807083": {
+              "resourceType": "wknd-events/components/content/columncontrol",
+              ":type": "wknd-events/components/content/columncontrol"
+            },
+            "columncontrol_1120548646": {
+              "resourceType": "wknd-events/components/content/columncontrol",
+              ":type": "wknd-events/components/content/columncontrol"
+            },
+            "columncontrol_1675920635": {
+              "resourceType": "wknd-events/components/content/columncontrol",
+              ":type": "wknd-events/components/content/columncontrol"
+            }
+          },
+          ":itemsOrder": [
+            "countdownclock",
+            "countdownclock_318821516",
+            "countdownclock_1899988329",
+            "image",
+            "responsivegrid",
+            "columncontrol",
+            "columncontrol_1515151675",
+            "text",
+            "columncontrol_1143807083",
+            "columncontrol_1120548646",
+            "columncontrol_1675920635"
+          ],
+          ":type": "wcm/foundation/components/responsivegrid"
+        }
+      },
+      ":itemsOrder": ["responsivegrid"],
+      ":type": "wcm/foundation/components/responsivegrid"
+    }
+  },
+  ":itemsOrder": ["root"]
+}

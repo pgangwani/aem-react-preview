@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Countdown Clock"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <attributeTab
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Attributes &amp; Tags"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <globalAttributes jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/coral/foundation/include"
+                                      path="/apps/lowes/components/content/reusabledialog/globalattributes/cq:dialog/content"/>
+                </items>
+            </attributeTab>
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Banner Image"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <desktopImage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldLabel="DT Image"
+                            fieldDescription="Select banner image for desktop."
+                            fileNameParameter="./fileName"
+                            fileReferenceParameter="./desktopImage"
+                            required="{Boolean}true"
+                            mimeTypes="[image]"
+                            multiple="{Boolean}false"
+                            name="./file"
+                            title="Upload Image Asset"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <mowImage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldLabel="MOW Image"
+                            fieldDescription="Select banner image for MOW."
+                            fileNameParameter="./fileName"
+                            fileReferenceParameter="./mowImage"
+                            mimeTypes="[image]"
+                            multiple="{Boolean}false"
+                            name="./file"
+                            title="Upload Image Asset"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <tabletImage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                            allowUpload="false"
+                            autoStart="{Boolean}false"
+                            class="cq-droptarget"
+                            fieldLabel="Tablet Image"
+                            fieldDescription="Select banner image for Tablet."
+                            fileNameParameter="./fileName"
+                            fileReferenceParameter="./tabletImage"
+                            mimeTypes="[image]"
+                            multiple="{Boolean}false"
+                            name="./file"
+                            title="Upload Image Asset"
+                            uploadUrl="${suffix.path}"
+                            useHTML5="{Boolean}true"/>
+                    <imageAltText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Image Alt Text"
+                            fieldDescription="Enter Image Description."
+                            name="./imageAltText"
+                            required="{Boolean}true"/>
+                    <link
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldLabel="CTA URL"
+                            fieldDescription="Enter call to action URL."
+                            name="./ctaUrl"
+                            required="{Boolean}true"
+                            rootPath="/content/lowes"/>
+                    <linkTagging
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                            path="/apps/lowes/components/content/reusabledialog/globaltags/cq:dialog/content"/>
+                </items>
+            </column>
+            <clock jcr:primaryType="nt:unstructured"
+                   jcr:title="Countdown Clock"
+                   sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <headline1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Headline 1"
+                            fieldDescription="Enter Headline 1 text."
+                            name="./headline1"
+                            maxlength="25"
+                            required="{Boolean}false"/>
+                    <headline2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Headline 2"
+                            fieldDescription="Enter Headline 2 text."
+                            name="./headline2"
+                            maxlength="25"
+                            required="{Boolean}false"/>
+                    <verticalAlignment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                            fieldLabel="Vertical Alignment"
+                            fieldDescription="Select vertical alignment."
+                            name="./verticalAlignment"
+                            required="true"
+                            vertical="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <left jcr:primaryType="nt:unstructured"
+                                  value="top"
+                                  checked="true"
+                                  text="Top"/>
+                            <center jcr:primaryType="nt:unstructured"
+                                    value="center"
+                                    text="Center"/>
+                            <right jcr:primaryType="nt:unstructured"
+                                   value="bottom"
+                                   text="Bottom"/>
+                        </items>
+                    </verticalAlignment>
+                    <horizontalAlignment
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                            fieldLabel="Horizontal Alignment"
+                            fieldDescription="Select horizontal alignment."
+                            name="./horizontalAlignment"
+                            required="true"
+                            vertical="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <left jcr:primaryType="nt:unstructured"
+                                  value="left"
+                                  checked="true"
+                                  text="Left"/>
+                            <center jcr:primaryType="nt:unstructured"
+                                    value="center"
+                                    text="Center"/>
+                            <right jcr:primaryType="nt:unstructured"
+                                   value="right"
+                                   text="Right"/>
+                        </items>
+                    </horizontalAlignment>
+                    <headlineColor
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Headline Text Color"
+                            fieldDescription="Select text color of headlines."
+                            name="./headlineColor">
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                path="/etc/acs-commons/lists/Lowes/colors"/>
+                    </headlineColor>
+                    <countdownBoxBackgroundColor
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Clock Background Color"
+                            fieldDescription="Select Countdown Clock Background color."
+                            name="./countdownBoxBackgroundColor">
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                path="/etc/acs-commons/lists/Lowes/backgroundcolors"/>
+                    </countdownBoxBackgroundColor>
+                    <make-targetDate-string
+                            about="This causes eventStartDate to be saved as a String in JCR instead of Date"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/granite/ui/components/coral/foundation/form/hidden"
+                            name="./targetDate@TypeHint"
+                            value="String"/>
+                    <targetDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldLabel="Target Date"
+                            fieldDescription="Enter date and time of clock expiration."
+                            name="./targetDate"
+                            required="{Boolean}true"
+                            type="datetime"
+                            valueFormat="YYYY-MM-DD[T]HH:mm:ss.SSSZ"/>
+                </items>
+            </clock>
+        </items>
+    </content>
+</jcr:root>

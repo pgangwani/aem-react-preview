@@ -1,0 +1,10 @@
+{
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "eslint.validate": [ "javascript", "javascriptreact", "html" ],
+    "eslint.workingDirectories": [ "./react-app"],
+    "eslint.options": { "configFile": ".eslintrc.json" }
+}
